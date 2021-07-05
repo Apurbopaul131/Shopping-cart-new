@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <section id="order-page">
+      <div class="container">
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>iPhone 11 128GB Black</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button class="btn btn-default" id="icon-minus"><i class="fas fa-minus"></i></button>
+                           <input type="text" id="phone-input" class="form-control text-center" value="1">
+                           <button class="btn btn-default" id="icon-plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5 class="tag">$ <span id="phone-amount">1,219</span> </h5>
+                        <button id="phone-cross" style="border-radius: 5px;"><img src="images/remove.png" alt="" class="remove-item"></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>iPhone 11 Silicone Case - Black</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button class="btn btn-default"  id="case-minus"><i class="fas fa-minus"></i></button>
+                           <input type="text" class="form-control text-center" id="case-input" value="1">
+                           <button class="btn btn-default" id="case-plus"><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5 class="tag">$ <span id="case-amount">59</span> </h5>
+                        <button id="case-cross" style="border-radius: 5px;"><img src="images/remove.png" alt="" class="remove-item"></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+
+                     <div class="col-md-8">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-md-4 status">
+                        <h5>$ <span id="subtotal">1,278</span> </h5>
+                        <h5>$ <span id="tax">127</span></h5>
+                        <h5>$ <span id="total-amount">1,405</span></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button type="button" id="checkout-btn" class="btn btn-success check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="product-clip">
+      <div class="row">
+         <div class="col col-md-8 text-center">
+             <h3>Your order details</h3>
+             <div class="table-div">
+               <table>
+                  <tr>
+                     <th>Product Name</th>
+                     <th>Number of Product</th>
+                     <th>Price</th>
+                   </tr>
+                   
+                   <tr>
+                     <td>Mobile</td>
+                     <td id="number-mobile">1</td>
+                     <td>$ <span id="mobile-price">1219</span> </td>
+                   </tr>
+                   <tr>
+                     <td>Mobile case</td>
+                     <td id="number-case">1</td>
+                     <td>$<span id="case-price">59</span> </td>
+                   </tr>
+                  </table>
+             </div>
+             
+         </div>
+         <div class="col col-md-4">
+            <h3>Total payable amount</h3>
+            <div class="row payable-div">
+               <div class="col col-md-6">
+                  <h5>Subtotal</h5>
+                  <h5>Tax:</h5>
+                  <h5>Total:</h5>
+               </div>
+               <div class="col col-md-6">
+                  <h5>$<span id="proceed-subtotal">1278</span></h5>
+                  <h5>$ <span id="proceed-tax">127</span></h5>
+                  <h5>$ <span id="proceed-total">1405</span> </h5>
+                  <button type="button" id="proceed-btn" class="btn btn-success check-out mr-5 mt-3">proceed</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <script src="script.js"></script>
+</body>
+
+</html>
