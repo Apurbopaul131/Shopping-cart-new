@@ -1,1 +1,5 @@
 # Shopping-cart-new
+
+Description: This is an e-commerce website. You can purchase phone and phone case. You can show your payable amount in the screen. After click checkout page you can see a billing clip.Then, click proceed button you can complete the order.
+
+Technology: HTML5,css3,vanilla javascript and javascript dom.
